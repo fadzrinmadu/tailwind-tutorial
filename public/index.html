@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -74,6 +74,16 @@
     </form>
   </div>
 
+  <hr class="my-20">
+
+  <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-150 hover:rotate-45 transition hover:bg-pink-500 origin-top-left"></div>
+
+  <div class="w-40 h-40 mt-20 mx-auto group">
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg group-hover:scale-150 group-hover:rotate-45 transition group-hover:bg-pink-500 origin-top-left"></div>
+  </div>
+
+  <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-20 animate-wiggle"></div>
+
   <div class="mb-96"></div>
 
   <script>
@@ -81,7 +91,7 @@
     const html = document.querySelector('html');
 
     checkbox.addEventListener('click', () => {
-      !checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
     });
   </script>
 </body>
